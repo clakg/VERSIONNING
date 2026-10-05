@@ -4,7 +4,8 @@
   "description": "ligne 1",
   "main": "index.js",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "lint:html": "html-validate index.html"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/clakg/VERSIONNING/issues"
   },
-  "homepage": "https://github.com/clakg/VERSIONNING#readme"
+  "homepage": "https://github.com/clakg/VERSIONNING#readme",
+  "devDependencies": {
+    "html-validate": "^10.9.0"
+  }
 }
