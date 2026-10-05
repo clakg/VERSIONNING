@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B3 Versionning</title>
+    <script>
+      window.sentryOnLoad = function () {
+        Sentry.init({ release: "b3-versioning@1.2.0", environment: "dev" });
+      };
+    </script>
+    <script
+      src="https://js-de.sentry-cdn.com/92c48e53e5b20bdcd2f311a16f42a054.min.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -23,7 +32,10 @@
           pour la review test2
         </p>
 
-        <button type="submit">Se connecter</button>
+        <button type="submit">Se connecter</button
+        ><button type="button" onclick="myUndefinedFunction()">
+          Tester Sentry
+        </button>
       </form>
 
       <p>Maquette pédagogique sans authentification réelle.</p>
